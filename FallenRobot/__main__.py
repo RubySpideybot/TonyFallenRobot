@@ -353,7 +353,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "fallen_":
         query.message.edit_text(
-            text="""Hey baby,\n\n   This is [ⲩⲟⲟⲛⲓⲉ](t.me/@Yoonie_rubybot)\n\nA powerful Group Management bot built to help you manage your group easily & to protect your group from scammers & spammers.\n\nI have the normal group managing functions like flood control, a warning system etc but I mainly have the advanced and handy antispam system and the banning system which safeguards and helps your group from spammers.\n\n🤖 What can i do :\n‣ I can restrict users.\n‣ I can greet users with customisable welcome messages & even set a  group's rules.\n‣ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n‣ I have an advanced anti-flood system.\n‣ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n‣ I check for admins permission before executing any command & more stuffs.\n\n\n❓ If you've any question about *ⲩⲟⲟⲛⲓⲉ* then contact to my [Oppa🫰🏻](t.me/Horny_RUBY) \n\nMade with ❤️ by *[𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY)""",
+            text="""Hey baby,\n\n   This is [ⲩⲟⲟⲛⲓⲉ](t.me/@Yoonie_rubybot)\n\nA powerful Group Management bot built to help you manage your group easily & to protect your group from scammers & spammers.\n\nI have the normal group managing functions like flood control, a warning system etc but I mainly have the advanced and handy antispam system and the banning system which safeguards and helps your group from spammers.\n\n🤖 What can i do :\n‣ I can restrict users.\n‣ I can greet users with customisable welcome messages & even set a  group's rules.\n‣ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n‣ I have an advanced anti-flood system.\n‣ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n‣ I check for admins permission before executing any command & more stuffs.\n\n\n❓ If you've any question about *ⲩⲟⲟⲛⲓⲉ* then contact to my [Oppa🫰🏻](t.me/Horny_RUBY) \n\nMade with ❤️ by [𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -379,7 +379,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""Hey baby,\n   This is *ⲩⲟⲟⲛⲓⲉ*\n\n‣ Here is my source code : [GitHub](https://github.com/AnonymousR1025/FallenRobot)\n\n☘ My source is in development & not completed yet\n‣ So if you found any bug or if you wanna request any feature, please let us know at [My Oppa🫰🏻](https://t.me/Horny_RUBY)""",
+            text="""Hey baby,\n   This is *ⲩⲟⲟⲛⲓⲉ*\n\n‣ Here is my source code : [GitHub](https://github.com/AnonymousR1025/FallenRobot)\n\n☘ My source is in development & not completed yet\n‣ So if you found any bug or if you wanna request any feature, please let us know at [My Oppa🫰🏻](https://t.me/Horny_RUBY) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -726,7 +726,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("Yoonie is Started.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
