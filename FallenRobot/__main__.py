@@ -75,41 +75,40 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey baby\n   This is *ⲩⲟⲟⲛⲓⲉ* [❤️‍🔥](https://telegra.ph/file/2228c94b368d9e0b186ab.jpg) \n\nI am the most powerful Group Management bot of Telegram.\nI have awesome features & no one can beat me.\n‣ For Getting information about my commands, click on Help & Commands button or hit /help
+*ʜᴇʏ,\n ᴛʜɪs ɪs ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ* [!](https://telegra.ph/file/35b87c2ed7f682d1539be.jpg)\n\n *ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\n  ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ\nꜰᴏʀ ɢᴇᴛᴛɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ /help
 """
 
 buttons = [
-[
+    [
         InlineKeyboardButton(
-            text="Help & Commands ❔", callback_data="help_back"),
+            text="✗ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ ✗", url="https://t.me/FallenXRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add me to your chat ➕", url="http://t.me/Yoonie_rubybot?startgroup=true"),
-    ],
-    
-    [
-        InlineKeyboardButton(
-            text="About Me", callback_data="fallen_"),
-        InlineKeyboardButton(
-            text="Source Code", callback_data="source_"),
+            text="🧐 ʜᴇʟᴘ & ᴄᴍᴅs​​​ 🧐", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="💞 ᴀʙᴏᴜᴛ ᴍᴇ​​ 💞", callback_data="fallen_"),
+        InlineKeyboardButton(
+            text="🙄 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🙄", callback_data="source_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="💔 sᴜᴘᴘᴏʀᴛ 💔", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="Oppa ❤️", url=f"https://t.me/{OWNER_USERNAME}"
+            text="🍑 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🍑", url=f"https://t.me/{OWNER_USERNAME}"
         ),
     ],
 ]
 
-FallenRobot_IMG = "https://telegra.ph/file/2228c94b368d9e0b186ab.jpg"
+FallenRobot_IMG = "https://telegra.ph/file/35b87c2ed7f682d1539be.jpg"
 
 HELP_STRINGS = """
-ⲩⲟⲟⲛⲓⲉ - Exclusive Features:\n‣ Checkout all the commands\n‣ All of my commands can be used with / or !\n‣ If you got any issue or bug in any command, please report it to @Horny_RUBY\n\n » MAIN COMMANDS « \n\n‣ /start : Starts me | According to me you've already done it.\n‣ /donate : Support me by donating for my Hardwork.\n‣ /help : Available commands.\n > In PM : will send you help for all supported modules.\n > In Group : will redirect you to PM, with all that help modules."""
+ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*» ɪꜰ ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @DevilsHeavenMF*\n\n*ㅤㅤㅤㅤㅤㅤ» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*\n\n➲ /start : *ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.*\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.*\n*  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.*\n*  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ.*"""
 
-DONATE_STRING = """Donate to my [Oppa ❤️](https://t.me/Horny_RUBY) ."""
+DONATE_STRING = """[𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/anonymous_was_bot)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -219,7 +218,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I am Alive baby!\n<b>I didn't sleep since:</b> <code>{}</code>".format(
+            "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -298,7 +297,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "» Available commands for​​ *{}* :\n".format(
+                "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ​​* *{}* :\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -354,7 +353,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "fallen_":
         query.message.edit_text(
-            text="""Hey baby,\n\n   This is [ⲩⲟⲟⲛⲓⲉ](t.me/Yoonie_rubybot)\n\nA powerful Group Management bot built to help you manage your group easily & to protect your group from scammers & spammers.\n\nI have the normal group managing functions like flood control, a warning system etc but I mainly have the advanced and handy antispam system and the banning system which safeguards and helps your group from spammers.\n\n🤖 What can i do :\n‣ I can restrict users.\n‣ I can greet users with customisable welcome messages & even set a  group's rules.\n‣ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n‣ I have an advanced anti-flood system.\n‣ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n‣ I check for admins permission before executing any command & more stuffs.\n\n\n❓ If you've any question about *ⲩⲟⲟⲛⲓⲉ* then contact to my [Oppa🫰🏻](t.me/Horny_RUBY) \n\nMade with ❤️ by [𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY) .""",
+            text="""*💔 ʜᴇʏ,\n\n  ᴛʜɪs ɪs *[ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ](t.me/FallenXRobot)\n\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ. *\n\nɪ ʜᴀᴠᴇ ᴛʜᴇ ɴᴏʀᴍᴀʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢɪɴɢ ꜰᴜɴᴄᴛɪᴏɴꜱ ʟɪᴋᴇ ꜰʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ, ᴀ ᴡᴀʀɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴇᴛᴄ ʙᴜᴛ ɪ ᴍᴀɪɴʟʏ ʜᴀᴠᴇ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʜᴀɴᴅʏ ᴀɴᴛɪꜱᴘᴀᴍ ꜱʏꜱᴛᴇᴍ ᴀɴᴅ ᴛʜᴇ ʙᴀɴɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴡʜɪᴄʜ ꜱᴀꜰᴇɢᴀᴜʀᴅꜱ ᴀɴᴅ ʜᴇʟᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ.\n\n👀 ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ :\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.\n\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.\n\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ.\n\n➲  ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ.\n\n\n* ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ *[ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](t.me/DevilsHeavenMF) *\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ *[𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦​](https://t.me/anonymous_was_bot)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -380,7 +379,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""Hey baby,\n   This is *ⲩⲟⲟⲛⲓⲉ*\n\n‣ Here is my source code : [GitHub](https://github.com/AnonymousR1025/FallenRobot)\n\n☘ My source is in development & not completed yet\n‣ So if you found any bug or if you wanna request any feature, please let us know at [My Oppa🫰🏻](https://t.me/Horny_RUBY) .""",
+            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ*\n\n*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/AnonymousR1025/FallenRobot)\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ](https://t.me/DevilsHeavenMF) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/anonymous_was_bot)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -415,7 +414,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="help",
+                                text="ʜᴇʟᴘ​",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -426,18 +425,18 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "» Choose an option for getting help.",
+            "» ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʜᴇʟᴩ.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open in Private",
+                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
                             url="https://t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Open Here",
+                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
                             callback_data="help_back",
                         )
                     ]
@@ -607,7 +606,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="settings",
+                                text="sᴇᴛᴛɪɴɢs​",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -633,7 +632,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 697630079 and DONATION_LINK:
+        if OWNER_ID != 1356469075 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -681,7 +680,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "» ⲩⲟⲟⲛⲓⲉ ɪs ᴀʟɪᴠᴇ !")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "» ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -727,7 +726,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Yoonie is Started.")
+        LOGGER.info("Using long polling.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
