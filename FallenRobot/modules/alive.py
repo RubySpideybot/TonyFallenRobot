@@ -17,12 +17,12 @@ PHOTO = [
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**Hey baby,​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nI am ⲩⲟⲟⲛⲓⲉ​**\n━━━━━━━━━━━━━━━━━━━\n\n"
+  TEXT = f"**Hey baby,​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\n   I am ⲩⲟⲟⲛⲓⲉ​**\n━━━━━━━━━━━━━━━━━━━\n\n"
   TEXT += f"» **My Developer​ : [𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY)** \n\n"
   TEXT += f"» **Library Version :** `{telever}` \n\n"
   TEXT += f"» **Telethon Version :** `{tlhver}` \n\n"
   TEXT += f"» **Pyrogram Version :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
-  BUTTON = [[Button.url("ʜᴇʟᴘ​", "https://t.me/Yoonie_rubybot?start=help"), Button.url("Oppa🫰🏻​", "https://t.me/Horny_RUBY")]]
+  BUTTON = [[Button.url("Help", "https://t.me/Yoonie_rubybot?start=help"), Button.url("Oppa🫰🏻​", "https://t.me/Horny_RUBY")]]
   ran = random.choice(PHOTO)
   await tbot.send_file(event.chat_id, ran, caption=TEXT,  buttons=BUTTON)
 
