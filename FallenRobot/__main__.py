@@ -107,9 +107,9 @@ buttons = [
 FallenRobot_IMG = "https://telegra.ph/file/2228c94b368d9e0b186ab.jpg"
 
 HELP_STRINGS = """
-*ⲩⲟⲟⲛⲓⲉ* - Exclusive Features:\n‣ Checkout all the commands\n‣ All of my commands can be used with / or !\n‣ If you got any issue or bug in any command, please report it to @Horny_RUBY\n\n*» Main Commands «*\n\n‣ /start : Starts me | According to me you've already done it​.\n‣ /donate : Support me by donating for my Hardwork​.\n‣ /help  : Available commands.\n *•* In PM : will send you​ help for all supported modules.\n *•* In Group : will redirect you to PM, with all that help modules."""
+ⲩⲟⲟⲛⲓⲉ - Exclusive Features:\n‣ Checkout all the commands\n‣ All of my commands can be used with / or !\n‣ If you got any issue or bug in any command, please report it to @Horny_RUBY\n\n » MAIN COMMANDS « \n\n‣ /start : Starts me | According to me you've already done it.\n‣ /donate : Support me by donating for my Hardwork.\n‣ /help : Available commands.\n > In PM : will send you help for all supported modules.\n > In Group : will redirect you to PM, with all that help modules."""
 
-DONATE_STRING = """[𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY)"""
+DONATE_STRING = """Donate to my [Oppa ❤️](https://t.me/Horny_RUBY) ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -415,7 +415,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help​",
+                                text="help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -607,7 +607,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings​",
+                                text="settings",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
