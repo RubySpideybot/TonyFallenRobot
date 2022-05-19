@@ -379,7 +379,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""Hey baby,\n   This is *ⲩⲟⲟⲛⲓⲉ*\n\n‣ Here is my source code : [GitHub](https://github.com/AnonymousR1025/FallenRobot)\n\n☘ My source is in development & not completed yet\n‣ So if you found any bug or if you wanna request any feature, please let us know at [My Oppa🫰🏻](https://t.me/Horny_RUBY)""",
+            text="""Hey baby,\n    This is *ⲩⲟⲟⲛⲓⲉ*\n\n‣ Here is my source code : [GitHub](https://github.com/AnonymousR1025/FallenRobot)\n\n☘ My source is in development & not completed yet\n‣ So if you found any bug or if you wanna request any feature, please let us know at [My Oppa🫰🏻](https://t.me/Horny_RUBY)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
