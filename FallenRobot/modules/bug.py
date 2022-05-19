@@ -37,7 +37,7 @@ async def bug(_, msg: Message):
     if msg.chat.username:
         chat_username = (f"@{msg.chat.username}/`{msg.chat.id}`")
     else:
-        chat_username = (f"ᴩʀɪᴠᴀᴛᴇ ɢʀᴏᴜᴩ/`{msg.chat.id}`")
+        chat_username = (f"Private Group/`{msg.chat.id}`")
 
     bugs = content(msg)
     user_id = msg.from_user.id
@@ -45,7 +45,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/40eb1ed850cdea274693e.jpg"
+    thumb = "https://telegra.ph/file/2228c94b368d9e0b186ab.jpg"
     
     bug_report = f"""
 **#ʙᴜɢ : ** **@{owner_usn}**
@@ -60,29 +60,29 @@ async def bug(_, msg: Message):
 
     
     if msg.chat.type == "private":
-        await msg.reply_text("<b>» ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴩs.</b>")
+        await msg.reply_text("<b>» This command is only for groups.</b>")
         return
 
     if user_id == owner_id:
         if bugs:
             await msg.reply_text(
-                "<b>» ᴀʀᴇ ʏᴏᴜ ᴄᴏᴍᴇᴅʏ ᴍᴇ 🤣, ʏᴏᴜ'ʀᴇ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.</b>",
+                "<b>» Are you kidding me 🤣, You're the owner of the bot.</b>",
             )
             return
         else:
             await msg.reply_text(
-                "ᴄʜᴜᴍᴛɪʏᴀ ᴏᴡɴᴇʀ!"
+                "I'll fuck you owner!"
             )
     elif user_id != owner_id:
         if bugs:
             await msg.reply_text(
-                f"<b>ʙᴜɢ ʀᴇᴩᴏʀᴛ : {bugs}</b>\n\n"
-                "<b>» ʙᴜɢ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴩᴏʀᴛᴇᴅ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ !</b>",
+                f"<b>Bug Report : {bugs}</b>\n\n"
+                "<b>» bug Successfully reported !</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "• ᴄʟᴏsᴇ •", callback_data=f"close_reply")
+                                "• Close •", callback_data=f"close_reply")
                         ]
                     ]
                 )
@@ -95,18 +95,18 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• ᴠɪᴇᴡ ʙᴜɢ •", url=f"{msg.link}")
+                                "• View Bug •", url=f"{msg.link}")
                         ],
                         [
                             InlineKeyboardButton(
-                                "• ᴄʟᴏsᴇ •", callback_data="close_send_photo")
+                                "• Close •", callback_data="close_send_photo")
                         ]
                     ]
                 )
             )
         else:
             await msg.reply_text(
-                f"<b>» ɴᴏ ʙᴜɢ ᴛᴏ ʀᴇᴩᴏʀᴛ !</b>",
+                f"<b>» No bug to report !</b>",
             )
         
 
@@ -129,7 +129,7 @@ async def close_send_photo(_, CallbackQuery):
 
     
 __help__ = """
-*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ ɪɴ ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ*
- ❍ /bug *:* ᴛᴏ ʀᴇᴩᴏʀᴛ ᴀ ʙᴜɢ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.
+For reporting a bug in *ⲩⲟⲟⲛⲓⲉ*
+ ❍ /bug : To report a bug.
 """
-__mod_name__ = "Bᴜɢ"
+__mod_name__ = "Bug"
