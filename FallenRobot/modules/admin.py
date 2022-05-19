@@ -306,7 +306,7 @@ def spromote(update: Update, context: CallbackContext) -> str:
 
     log_message = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        f"#PROMOTED\n"
+        f"#FAKEPROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
     )
@@ -935,9 +935,9 @@ Here is the help for the *Admin* module:
 ‣ /title <title here> : sets a custom title for an admin that the bot promoted
 ‣ /admincache : Reload the Adminlist
 ‣ /pinned : Goto recently pinned message
-‣ /setdesc : sets description to the user replied to
+‣ /setdesc <description> : sets description to the chat
 ‣ /setgpic : reply to some photo or file to set new chat pic
-‣ /delgpic : deletes chat pic
+‣ /delgpic : deletes the chat pic
 ‣ /setgtitle <title here> : sets a title for the chat
 """
 
