@@ -919,6 +919,29 @@ def helps(chat):
     return gs(chat, "admin_help")
 
 
+__help__ = """
+Here is the help for the *Admin* module:
+
+‣ /admins: list of admins in the chat
+
+*Admins only:*
+‣ /pin : silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
+‣ /unpin : unpins the currently pinned message
+‣ /invitelink : gets invitelink
+‣ /promote : promotes the user replied to
+‣ /spromote : fake promotes the user replied to
+‣ /fullpromote : promotes the user replied to with all admin rights
+‣ /demote: demotes the user replied to
+‣ /title <title here> : sets a custom title for an admin that the bot promoted
+‣ /admincache : Reload the Adminlist
+‣ /pinned
+‣ /setdesc
+‣ /setsticker
+‣ /setgpic
+‣ /delgpic
+‣ /setgtitle
+"""
+
   
 SET_DESC_HANDLER = CommandHandler("setdesc", set_desc, filters=Filters.group)
 SET_STICKER_HANDLER = CommandHandler("setsticker", set_sticker, filters=Filters.group )
