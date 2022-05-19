@@ -934,12 +934,11 @@ Here is the help for the *Admin* module:
 ‣ /demote: demotes the user replied to
 ‣ /title <title here> : sets a custom title for an admin that the bot promoted
 ‣ /admincache : Reload the Adminlist
-‣ /pinned
-‣ /setdesc
-‣ /setsticker
-‣ /setgpic
-‣ /delgpic
-‣ /setgtitle
+‣ /pinned : Goto recently pinned message
+‣ /setdesc : sets description to the user replied to
+‣ /setgpic : reply to some photo or file to set new chat pic
+‣ /delgpic : deletes chat pic
+‣ /setgtitle <title here> : sets a title for the chat
 """
 
   
