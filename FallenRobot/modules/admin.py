@@ -922,23 +922,23 @@ def helps(chat):
 __help__ = """
 Here is the help for the *Admin* module:
 
-‣ /admins: list of admins in the chat
+ ‣ /admins: list of admins in the chat
 
 *Admins only:*
-‣ /pin : silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
-‣ /unpin : unpins the currently pinned message
-‣ /invitelink : gets invitelink
-‣ /promote : promotes the user replied to
-‣ /spromote : fake promotes the user replied to
-‣ /fullpromote : promotes the user replied to with all admin rights
-‣ /demote: demotes the user replied to
-‣ /title <title here> : sets a custom title for an admin that the bot promoted
-‣ /admincache : Reload the Adminlist
-‣ /pinned : Goto recently pinned message
-‣ /setdesc <description> : sets description to the chat
-‣ /setgpic : reply to some photo or file to set new chat pic
-‣ /delgpic : deletes the chat pic
-‣ /setgtitle <title here> : sets a title for the chat
+ ‣ /pin : silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
+ ‣ /unpin : unpins the currently pinned message
+ ‣ /invitelink : gets invitelink
+ ‣ /promote : promotes the user replied to
+ ‣ /spromote : fake promotes the user replied to
+ ‣ /fullpromote : promotes the user replied to with all admin rights
+ ‣ /demote: demotes the user replied to
+ ‣ /title <title here> : sets a custom title for an admin that the bot promoted
+ ‣ /admincache : Reload the Adminlist
+ ‣ /pinned : Goto recently pinned message
+ ‣ /setdesc <description> : sets description to the chat
+ ‣ /setgpic : reply to some photo or file to set new chat pic
+ ‣ /delgpic : deletes the chat pic
+ ‣ /setgtitle <title here> : sets a title for the chat
 """
 
   
