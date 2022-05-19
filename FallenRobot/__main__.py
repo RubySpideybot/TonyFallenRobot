@@ -106,7 +106,7 @@ buttons = [
 FallenRobot_IMG = "https://telegra.ph/file/2228c94b368d9e0b186ab.jpg"
 
 HELP_STRINGS = """
-ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n‣ All of my commands can be used with / or !\n‣ If you got any issue or bug in any command, please report it to @Horny_RUBY\n\n*» Main Commands «*\n\n‣ /start : Starts me | According to me you've already done it​.\n‣ /donate : Support me by donating for my Hardwork​.\n‣ /help : Available commands.\n ⋆ In PM : will send you​ help for all supported modules.\n ⋆ In Group : will redirect you to PM, with all that help modules."""
+*ⲩⲟⲟⲛⲓⲉ* - Exclusive Features:\n‣ Checkout all the commands\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n‣ If you got any issue or bug in any command, please report it to @Horny_RUBY\n\n*» Main Commands «*\n\n‣ /start : Starts me | According to me you've already done it​.\n‣ /donate : Support me by donating for my Hardwork​.\n‣ /help : Available commands.\n ⋆ In PM : will send you​ help for all supported modules.\n ⋆ In Group : will redirect you to PM, with all that help modules."""
 
 DONATE_STRING = """You can donate to my [Oppa🫰🏻](https://t.me/Horny_RUBY)"""
 
