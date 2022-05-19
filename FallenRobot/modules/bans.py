@@ -92,7 +92,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         silent = False
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        f"#{'S' if silent else ''}ʙᴀɴɴᴇᴅ\n"
+        f"#{'S' if silent else ''}Ⲃⲁⲛⲛⲉᴅ\n"
         f"<b>ʙᴀɴɴᴇᴅ ʙʏ:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
         f"<b>ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
@@ -111,8 +111,8 @@ def ban(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
             f"<code>❕</code><b>ʙᴀɴ ᴇᴠᴇɴᴛ</b>\n"
-            f"<code> </code><b>•  ʙᴀɴɴᴇᴅ ʙʏ:</b> {mention_html(user.id, user.first_name)}\n"
-            f"<code> </code><b>•  ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<code> </code><b>•  Ⲃⲁⲛⲛⲉᴅ ʙʏ:</b> {mention_html(user.id, user.first_name)}\n"
+            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
             reply += f"\n<code> </code><b>•  ʀᴇᴀsᴏɴ:</b> \n{html.escape(reason)}"
@@ -124,7 +124,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             # Do not reply
             if silent:
                 return log
-            message.reply_text("ʙᴀɴɴᴇᴅ !", quote=False)
+            message.reply_text("Ⲃⲁⲛⲛⲉᴅ !", quote=False)
             return log
         else:
             LOGGER.warning(update)
@@ -195,15 +195,15 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         f"<b>ᴛɪᴍᴇ:</b> {time_val}"
     )
     if reason:
-        log += "\n<b>ʀᴇᴀsᴏɴ:</b> {}".format(reason)
+        log += "\n<b>Reason:</b> {}".format(reason)
 
     try:
         chat.kick_member(user_id, until_date=bantime)
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"ʙᴀɴɴᴇᴅ! ᴜsᴇʀ {mention_html(member.user.id, html.escape(member.user.first_name))} "
-            f"ɪs ɴᴏᴡ ʙᴀɴɴᴇᴅ ғᴏʀ {time_val}.",
+            f"Ⲃⲁⲛⲛⲉᴅ! User {mention_html(member.user.id, html.escape(member.user.first_name))} "
+            f"is now Ⲃⲁⲛⲛⲉᴅ for {time_val}.",
             parse_mode=ParseMode.HTML,
         )
         return log
@@ -274,12 +274,12 @@ def kick(update: Update, context: CallbackContext) -> str:
         )
         log = (
             f"<b>{html.escape(chat.title)}:</b>\n"
-            f"ᴋɪᴄᴋᴇᴅ\n"
-            f"<b>ᴋɪᴄᴋᴇᴅ ʙʏ:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-            f"<b>ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"Kicked\n"
+            f"<b>Kicked by:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
-            log += f"\n<b>ʀᴇᴀsᴏɴ:</b> {reason}"
+            log += f"\n<b>Reason:</b> {reason}"
 
         return log
 
@@ -344,12 +344,12 @@ def unban(update: Update, context: CallbackContext) -> str:
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        f"ᴜɴʙᴀɴɴᴇᴅ\n"
-        f"<b>ᴜɴʙᴀɴɴᴇᴅ ʙʏ:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"ᴜⲛⲃⲁⲛⲛⲉᴅ\n"
+        f"<b>ᴜⲛⲃⲁⲛⲛⲉᴅ by:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
     if reason:
-        log += f"\n<b>ʀᴇᴀsᴏɴ:</b> {reason}"
+        log += f"\n<b>Reason:</b> {reason}"
 
     return log
 
@@ -392,9 +392,9 @@ def selfunban(context: CallbackContext, update: Update) -> str:
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        f"ᴜɴʙᴀɴɴᴇᴅ\n"
-        f"<b>ᴜɴʙᴀɴɴᴇᴅ ʙʏ:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"ᴜⲛⲃⲁⲛⲛⲉᴅ\n"
+        f"<b>ᴜⲛⲃⲁⲛⲛⲉᴅ by:</b> {mention_html(user.id, user.first_name)}\n"
+        f"<b>User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
 
     return log
@@ -425,7 +425,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(KICKME_HANDLER)
 
-__mod_name__ = "Bᴀɴs​"
+__mod_name__ = "Bans​"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,
