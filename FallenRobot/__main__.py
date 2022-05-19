@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey baby\n   This is *ⲩⲟⲟⲛⲓⲉ* [❤️‍🔥](https://telegra.ph/file/2228c94b368d9e0b186ab.jpg) \n\nI am the most powerful Group Management bot of Telegram.\nI have awesome features & no one can beat me.\n‣ For Getting information about my commands, click on Help & Commands button or hit /help
+Hey baby\n   This is *ⲩⲟⲟⲛⲓⲉ* [❤️‍🔥](https://telegra.ph/file/2228c94b368d9e0b186ab.jpg) \n\nI am the most powerful Group Management bot of Telegram.\nI have awesome features & no one can beat me.\n\n‣ For Getting information about my commands, click on Help & Commands button or hit /help
 """
 
 buttons = [
