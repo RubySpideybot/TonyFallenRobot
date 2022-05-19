@@ -130,6 +130,6 @@ async def close_send_photo(_, CallbackQuery):
     
 __help__ = """
 For reporting a bug in *ⲩⲟⲟⲛⲓⲉ*
- ❍ /bug : To report a bug.
+ ‣ /bug : To report a bug.
 """
 __mod_name__ = "Bug"
