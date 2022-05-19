@@ -139,9 +139,10 @@ def check_afk(update, context, user_id, fst_name, userc_id):
 
 
 __help__ = """
-*Away from group*
- ‣ /afk <reason>*:* mark yourself as AFK(away from keyboard).
- ‣ brb <reason>*:* same as the afk command - but not a command.
+*AWAY FROM GROUP :*
+
+‣ /afk <reason>*:* mark yourself as AFK(away from keyboard).
+‣ brb <reason>*:* same as the afk command - but not a command.
 When marked as AFK, any mentions will be replied to with a message to say you're not available!
 """
 
