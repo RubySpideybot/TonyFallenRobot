@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey baby\n   This is *ⲩⲟⲟⲛⲓⲉ* [❤️‍🔥](https://telegra.ph/file/2228c94b368d9e0b186ab.jpg) \n\nI am the most powerful Group Management bot of Telegram.\nI have awesome features & no one can beat me.\n\n‣ For Getting information about my commands, click on Help & Commands button or hit /help
+Hey baby\n    This is *ⲩⲟⲟⲛⲓⲉ* [❤️‍🔥](https://telegra.ph/file/2228c94b368d9e0b186ab.jpg) \n\nI am the most powerful Group Management bot of Telegram.\nI have awesome features & no one can beat me.\n\n‣ For Getting information about my commands, click on Help & Commands button or hit /help
 """
 
 buttons = [
@@ -353,7 +353,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "fallen_":
         query.message.edit_text(
-            text="""Hey baby,\n   This is [ⲩⲟⲟⲛⲓⲉ](t.me/Yoonie_rubybot)\n\nA powerful Group Management bot built to help you manage your group easily & to protect your group from scammers & spammers.\n\nI have the normal group managing functions like flood control, a warning system etc but I mainly have the advanced and handy antispam system and the banning system which safeguards and helps your group from spammers.\n\n🤖 What can i do :\n‣ I can restrict users.\n‣ I can greet users with customisable welcome messages & even set a  group's rules.\n‣ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n‣ I have an advanced anti-flood system.\n‣ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n‣ I check for admins permission before executing any command & more stuffs.\n\n\n❓ If you've any question about *ⲩⲟⲟⲛⲓⲉ* then contact to my [Oppa🫰🏻](t.me/Horny_RUBY) \n\nMade with ❤️ by [𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY)""",
+            text="""Hey baby,\n    This is [ⲩⲟⲟⲛⲓⲉ](t.me/Yoonie_rubybot)\n\nA powerful Group Management bot built to help you manage your group easily & to protect your group from scammers & spammers.\n\nI have the normal group managing functions like flood control, a warning system etc but I mainly have the advanced and handy antispam system and the banning system which safeguards and helps your group from spammers.\n\n🤖 What can i do :\n‣ I can restrict users.\n‣ I can greet users with customisable welcome messages & even set a  group's rules.\n‣ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n‣ I have an advanced anti-flood system.\n‣ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n‣ I check for admins permission before executing any command & more stuffs.\n\n\n❓ If you've any question about *ⲩⲟⲟⲛⲓⲉ* then contact to my [Oppa🫰🏻](t.me/Horny_RUBY) \n\nMade with ❤️ by [𓆩ᯓ𝙃𝙤𝙧𝙣𝙮↯𝙍𝙐𝘽𝙔𓆪 𓆩𔘓𓆪](https://t.me/Horny_RUBY)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
