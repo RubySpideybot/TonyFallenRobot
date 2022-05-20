@@ -457,7 +457,7 @@ Blacklists are used to stop certain triggers from being said in a group. Any tim
 
 *» NOTE*: Blacklists do not affect group admins.
 
- ‣ /blacklist*:* View the current blacklisted words.
+ ‣ /blacklist : View the current blacklisted words.
 
 *Admin only:*
  ‣ /addblacklist <triggers> : Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
