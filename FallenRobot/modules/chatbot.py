@@ -40,7 +40,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "ꜰᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(mention_html(user.id, user.first_name)),
+                "*ⲩⲟⲟⲛⲓⲉ* chatbot disabled by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -66,7 +66,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "ꜰᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(mention_html(user.id, user.first_name)),
+                "*ⲩⲟⲟⲛⲓⲉ* chatbot enabled by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -78,14 +78,14 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
 def kuki(update: Update, context: CallbackContext):
     user = update.effective_user
     message = update.effective_message
-    msg = "• ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ"
+    msg = "‣ Choose an option to enable/disable chatbot"
     keyboard = InlineKeyboardMarkup([[
         InlineKeyboardButton(
-            text="ᴇɴᴀʙʟᴇ",
+            text="Enable",
             callback_data="add_chat({})")],
        [
         InlineKeyboardButton(
-            text="ᴅɪsᴀʙʟᴇ",
+            text="Disable",
             callback_data="rm_chat({})")]])
     message.reply_text(
         msg,
@@ -140,7 +140,7 @@ def list_all_chats(update: Update, context: CallbackContext):
 
 __help__ = """
 *Admins only Commands*:
-  »  /chatbot *:* Shows chatbot control panel
+ ‣ /chatbot : Shows chatbot control panel
 
 """
 
