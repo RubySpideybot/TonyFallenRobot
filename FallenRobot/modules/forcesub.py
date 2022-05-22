@@ -41,13 +41,13 @@ def _onUnMuteRequest(client, cb):
                 except UserNotParticipant:
                     client.answer_callback_query(
                         cb.id,
-                        text=f"» ᴊᴏɪɴ @{channel} ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʜᴇɴ ᴩʀᴇss 'ᴜɴᴍᴜᴛᴇ ᴍᴇ' ʙᴜᴛᴛᴏɴ.",
+                        text=f"» Join @{channel} Channel & then press 'Unmute Me' button.",
                         show_alert=True,
                     )
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="» ʏᴏᴜ ᴀʀᴇ ᴍᴜᴛᴇᴅ ʙʏ ᴀᴅᴍɪɴs ғᴏʀ ᴀɴᴏᴛʜᴇʀ ʀᴇᴀsᴏɴ sᴏ ɪ ᴄᴀɴ'ᴛ ᴜɴᴍᴜᴛᴇ ʏᴏᴜ.",
+                    text="» You are muted by Admins for another reason so i can't unmute yᴏu.",
                     show_alert=True,
                 )
         else:
@@ -57,13 +57,13 @@ def _onUnMuteRequest(client, cb):
             ):
                 client.send_message(
                     chat_id,
-                    f"» **{cb.from_user.mention} ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴜɴᴍᴜᴛᴇ ʜɪᴍsᴇʟғ ʙᴜᴛ ɪ ᴄᴀɴ'ᴛ ᴜɴᴍᴜᴛᴇ ʜɪᴍ ʙᴇᴄᴀᴜsᴇ ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**\n__#ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛ...__",
+                    f"» **{cb.from_user.mention} is trying to unmute himself but i can't unmute him because i am not an Admin in this chat.**\n__#Leaving Chat...__",
                 )
 
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="» ᴡᴀʀɴɪɴɢ ! ᴅᴏɴ'ᴛ ᴩʀᴇss ᴛʜᴇ ᴜɴᴍᴜᴛᴇ ʙᴜᴛᴛᴏɴ ᴡʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴛᴀʟᴋ.",
+                    text="» WARNING! Don't press the unmute button when you can talk.",
                     show_alert=True,
                 )
 
@@ -85,7 +85,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "ʜᴇʏ {} 💔 \n **ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴᴇᴅ @{} ᴄʜᴀɴɴᴇʟ ʏᴇᴛ**🧐 \n \nᴩʟᴇᴀsᴇ ᴊᴏɪɴ [ᴛʜɪs ᴄʜᴀɴɴᴇʟ](https://t.me/{}) ᴀɴᴅ ᴛʜᴇɴ ᴩʀᴇss ᴛʜᴇ **ᴜɴᴍᴜᴛᴇ ᴍᴇ** ʙᴜᴛᴛᴏɴ. \n \n ".format(
+                        "Hey baby, {} 💔 \n **You haven't joined @{} channel yet**🧐 \n \nPlease Join [This Channel](https://t.me/{}) & then press the **UNMUTE ME** button. \n \n ".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,
@@ -93,13 +93,13 @@ def _check_member(client, message):
                             [
                                 [
                                     InlineKeyboardButton(
-                                        "• ᴄʜᴀɴɴᴇʟ •",
+                                        "• CHANNEL •",
                                         url="https://t.me/{}".format(channel),
                                     )
                                 ],
                                 [
                                     InlineKeyboardButton(
-                                        "• ᴜɴᴍᴜᴛᴇ ᴍᴇ •", callback_data="onUnMuteRequest"
+                                        "• UNMUTE ME •", callback_data="onUnMuteRequest"
                                     )
                                 ],
                             ]
@@ -110,13 +110,13 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "😕 **ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ʜᴇʀᴇ...**\n__ɢɪᴠᴇ ᴍᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ʙᴀɴ ᴜsᴇʀs ᴀɴᴅ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ... \n#ᴇɴᴅɪɴɢ ғsᴜʙ...__"
+                        "😕 I'm not an Admin here...\n__Give me permissions to ban users & then try again... \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
                 client.send_message(
                     chat_id,
-                    text=f"😕 **ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ɪɴ @{channel} ᴄʜᴀɴɴᴇʟ.**\n__ᴩʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ.\n#ᴇɴᴅɪɴɢ ғsᴜʙ...__",
+                    text=f"😕 I'm not an Admin in @{channel} Channel.\n__Promote me as an Admin in the channel.\n#Ending FSub...__",
                 )
 
 
@@ -130,10 +130,10 @@ def config(client, message):
             input_str = input_str.replace("@", "")
             if input_str.lower() in ("off", "no", "disable"):
                 sql.disapprove(chat_id)
-                message.reply_text("**» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅɪsᴀʙʟᴇᴅ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ.**")
+                message.reply_text("» Succesfully disabled Force Subscribe.")
             elif input_str.lower() in ("clear"):
                 sent_message = message.reply_text(
-                    "**» ᴜɴᴍᴜᴛɪɴɢ ᴀʟʟ ᴍᴇᴍʙᴇʀs ᴍᴜᴛᴇᴅ ʙʏ ɴᴏᴛ ᴊᴏɪɴɪɴɢ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ...**"
+                    "» Unmuting all members muted by not joining the channel..."
                 )
                 try:
                     for chat_member in client.get_chat_members(
@@ -142,62 +142,62 @@ def config(client, message):
                         if chat_member.restricted_by.id == (client.get_me()).id:
                             client.unban_chat_member(chat_id, chat_member.user.id)
                             time.sleep(1)
-                    sent_message.edit("**» ᴜɴᴍᴜᴛᴇᴅ ᴀʟʟ ᴍᴇᴍʙᴇʀs ᴡʜᴏ ᴀʀᴇ ᴍᴜᴛᴇᴅ ʙʏ ᴍᴇ ғᴏʀ ɴᴏᴛ ᴊᴏɪɴɪɴɢ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ.**")
+                    sent_message.edit("» Unmuted all members who are muted by me for not joining the channel.")
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "😕 **ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**\n__ɪ ᴄᴀɴ'ᴛ ᴜɴᴍᴜᴛᴇ ᴍᴇᴍʙᴇʀs ʙᴇᴄᴀᴜsᴇ ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴍᴜᴛᴇ/ᴜɴᴍᴜᴛᴇ ᴜsᴇʀs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.__"
+                        "😕 I'm not an Admin in this chat.\n__I can't unmute members because i don't have permissions to mute/unmute users in this chat.__"
                     )
             else:
                 try:
                     client.get_chat_member(input_str, "me")
                     sql.add_channel(chat_id, input_str)
                     message.reply_text(
-                        f"**» ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ᴇɴᴀʙʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ**\n__ғᴏʀᴄᴇ sᴜʙ ᴇɴᴀʙʟᴇᴅ, ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴩ ᴍᴇᴍʙᴇʀs ʜᴀᴠᴇ ᴛᴏ sᴜʙsᴄʀɪʙᴇ ᴛʜɪs [ᴄʜᴀɴɴᴇʟ](https://t.me/{input_str}) ғᴏʀ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.__",
+                        f"» Force Subscribe enabled succesfully\n__Force Sub enabled, All the group members have to subsribe this [CHANNEL](https://t.me/{input_str}) for sending messages in this chat.__",
                         disable_web_page_preview=True,
                     )
                 except UserNotParticipant:
                     message.reply_text(
-                        f"😕 **ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ**\n__ᴩʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ [ᴄʜᴀɴɴᴇʟ](https://t.me/{input_str}) ᴛᴏ ᴇɴᴀʙʟᴇ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ.__",
+                        f"😕 I'm not an Admin in the channel\n__Promote me as an Admin in the [CHANNEL](https://t.me/{input_str}) to enable Force Subscribe.__",
                         disable_web_page_preview=True,
                     )
                 except (UsernameNotOccupied, PeerIdInvalid):
-                    message.reply_text(f"**» ɪɴᴠᴀʟɪᴅ ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ.**")
+                    message.reply_text(f"» Invalid Channel username")
                 except Exception as err:
-                    message.reply_text(f"**ᴇʀʀᴏʀ:** ```{err}```")
+                    message.reply_text(f"**ERROR:** ```{err}```")
         else:
             if sql.fs_settings(chat_id):
                 message.reply_text(
-                    f"**» ғᴏʀᴄᴇ sᴜʙ ɪs ᴇɴᴀʙʟᴇᴅ.**\n__ғᴏʀ ᴛʜɪs [ᴄʜᴀɴɴᴇʟ](https://t.me/{sql.fs_settings(chat_id).channel})__",
+                    f"» Force Subscribe is enabled.\n__For this [CHANNEL](https://t.me/{sql.fs_settings(chat_id).channel})__",
                     disable_web_page_preview=True,
                 )
             else:
-                message.reply_text("**» ғᴏʀᴄᴇ sᴜʙ ɪs ᴅɪsᴀʙʟᴇᴅ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**")
+                message.reply_text("» Force Subscribe is disabled in in this chat.")
     else:
         message.reply_text(
-            "**» ᴏɴʟʏ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ ᴛʜɪs ᴄʜᴀᴛ ᴄᴀɴ ᴇɴᴀʙʟᴇ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ.**"
+            "» Only owner of this chat can enable Force Subscribe."
         )
 
 
 __help__ = """
-  *Force Subscribe:*
+*Force Subscribe*:
 
-  Fallen Robot can mute members who are not subscribed your channel until they subscribe When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+*ⲩⲟⲟⲛⲓⲉ* can mute members who are not subscribed your channel until they subscribe When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 
-  *Setup* *:* *Only for chat owner*
-  ❍ Add me in your group as admin
-  ❍ Add me in your channel as admin 
+*Setup*: *Only for chat owner*
+‣ Add me in your group as admin
+‣ Add me in your channel as admin 
     
-  *Commmands*
-  ❍ /fsub {channel username} *:* To turn on and setup the channel.
+*Commmands*:
+‣ /fsub {channel username} : To turn on and setup the channel.
 
-    💡Do this first...
+💡Do this first...
 
-  ❍ /fsub *:* To get the current settings.
-  ❍ /fsub disable *:* To turn of ForceSubscribe..
+‣ /fsub : To get the current settings.
+‣ /fsub disable : To turn of ForceSubscribe..
 
-    💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
+💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
 
-  ❍ /fsub clear *:* To unmute all members who are muted by me for not joining the channel.
+‣ /fsub clear : To unmute all members who are muted by me for not joining the channel.
 """
-__mod_name__ = "Fᴏʀᴄᴇ-Sᴜʙ"
+__mod_name__ = "Force-Sub"
 
