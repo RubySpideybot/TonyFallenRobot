@@ -25,6 +25,6 @@ __help__ = """
 
 Makes a Carbon of the given text & send it to you.
 
-‣ /carbon *:* Makes Carbon if replied to a text.
+ ‣ /carbon : Makes Carbon if replied to a text.
 
  """
