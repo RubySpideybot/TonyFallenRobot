@@ -106,11 +106,11 @@ async def imdb(e):
             parse_mode="HTML",
         )
     except IndexError:
-        await e.reply("Plox enter **Valid movie name** kthx")
+        await e.reply("Plox enter **Valid movie name** honey!")
 
 
 __help__ = """
- ❍ /imdb <Movie name>*:* Get full info about a movie from [imdb.com](https://m.imdb.com)
+‣ /imdb <Movie name> : Get full info about a movie from [imdb.com](https://m.imdb.com)
 """
 
-__mod_name__ = "Iᴍᴅʙ"
+__mod_name__ = "IMDB"
